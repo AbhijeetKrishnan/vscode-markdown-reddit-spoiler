@@ -1,0 +1,17 @@
+.md-spoiler {
+    display: inline-block;
+    background: #1b1b1b;
+    border-radius: 4px;
+    padding: 4px;
+  }
+   
+  .md-spoiler>* {
+    z-index: -1;
+    opacity: 0;
+    position: relative;
+  }
+   
+  .md-unhidenspoiler>* {
+    opacity: 1 !important;
+    z-index: 1 !important;
+  }
