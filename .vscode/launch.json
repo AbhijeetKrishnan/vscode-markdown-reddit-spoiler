@@ -2,7 +2,7 @@
 {
 	"version": "0.2.0",
 	"configurations": [{
-			"name": "Run Extension",
+			"name": "Launch Extension",
 			"type": "extensionHost",
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
@@ -10,7 +10,7 @@
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
 			"outFiles": [
-				"${workspaceFolder}/out/**/*.js"
+				"${workspaceFolder}/dist/**/*.js"
 			],
 			"preLaunchTask": "npm: watch"
 		}

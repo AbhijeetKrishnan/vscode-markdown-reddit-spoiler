@@ -1,0 +1,9 @@
+.vscode
+*.vsix
+node_modules
+out/
+src/
+docs/
+tsconfig.json
+webpack.config.js
+.gitignore

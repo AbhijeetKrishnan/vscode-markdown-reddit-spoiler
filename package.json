@@ -1,10 +1,11 @@
 {
     "name": "markdown-reddit-spoiler",
     "version": "0.1.0",
-    "displayName": "Markdown Reddit Spoiler",
+    "displayName": "Reddit Spoilers for Markdown Preview",
     "description": "Adds Reddit spoiler syntax support to VS Code's built-in markdown preview",
     "keywords": [
         "spoiler",
+        "reddit",
         "markdown",
         "github",
         "multi-root ready"
@@ -21,7 +22,7 @@
         "email": "abhijeet.krishnan@gmail.com"
     },
     "engines": {
-        "vscode": "^1.33.0"
+        "vscode": "^1.34.0"
     },
     "categories": [
         "Other"
@@ -36,23 +37,25 @@
             "./css/vscode-reddit-spoiler.css"
         ]
     },
-    "main": "./out/extension.js",
+    "main": "./dist/extension.js",
     "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "lint": "eslint . --ext .ts,.tsx",
-        "watch": "tsc -watch -p ./"
+        "vscode:prepublish": "webpack --mode production",
+        "compile": "webpack --mode none",
+        "watch": "webpack --mode none --watch",
+        "webpack": "webpack --mode development",
+        "webpack-dev": "webpack --mode development --watch"
     },
     "devDependencies": {
         "@types/node": "^12.12.0",
         "@types/vscode": "^1.34.0",
-        "@typescript-eslint/eslint-plugin": "^4.16.0",
-        "@typescript-eslint/parser": "^4.16.0",
-        "eslint": "^7.21.0",
-        "typescript": "^4.2.2"
+        "ts-loader": "^8.1.0",
+        "typescript": "^4.2.2",
+        "webpack": "^5.32.0",
+        "webpack-cli": "^4.6.0"
     },
     "dependencies": {
-        "markdown-it-reddit-spoiler": "^1.0.1"
+        "markdown-it-reddit-spoiler": "^1.0.1",
+        "vsce": "^1.87.1"
     },
     "homepage": "https://github.com/AbhijeetKrishnan/vscode-markdown-reddit-spoiler/blob/main/README.md"
 }
