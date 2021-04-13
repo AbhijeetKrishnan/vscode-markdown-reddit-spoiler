@@ -33,7 +33,6 @@
     "contributes": {
         "markdown.markdownItPlugins": true,
         "markdown.previewStyles": [
-            "./css/base.css",
             "./css/vscode-reddit-spoiler.css"
         ]
     },
