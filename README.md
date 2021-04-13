@@ -5,7 +5,8 @@
 ![Demo](/docs/demo.gif)
 ## What is it?
 
-A Visual Studio Code extension that adds support for the Reddit `>!spoiler!<` syntax to the built-in markdown preview.
+A Visual Studio Code extension that adds support for the Reddit `>!spoiler!<` syntax to the built-in
+[markdown preview](https://code.visualstudio.com/docs/languages/markdown).
 
 ## Features
 
@@ -13,8 +14,10 @@ A Visual Studio Code extension that adds support for the Reddit `>!spoiler!<` sy
 
 ## Issues
 
-- Requires disabling Markdown preview security to allow revealing spoilers by clicking on them
-- The following Markdwon elements cannot be hidden using the spoiler syntax -
+- Requires disabling
+[Markdown preview security](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview-security)
+to allow revealing spoilers by clicking on them (`onclick` is inserted into the HTML)
+- The following Markdown elements cannot be hidden using the spoiler syntax -
   - tables
   - text containing one or more empty lines
   - TeX math (rendered, for e.g., using [Markdown+Math](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath))
