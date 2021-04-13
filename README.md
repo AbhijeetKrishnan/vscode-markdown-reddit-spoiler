@@ -22,3 +22,4 @@ to allow revealing spoilers by clicking on them (`onclick` is inserted into the 
   - text containing one or more empty lines
   - TeX math (rendered, for e.g., using [Markdown+Math](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath))
   - images
+- spoilers in the preview rapidly flash when the Markdown file is being actively updated
