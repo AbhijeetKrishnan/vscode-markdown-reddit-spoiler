@@ -1,14 +1,20 @@
 .md-spoiler {
     display: inline-block;
-    background: #1b1b1b;
-    border-radius: 4px;
-    padding: 4px;
+    background: #545452;
+    border-radius: 2px;
+    transition: background 1s ease-out;
+    cursor: pointer;
   }
    
   .md-spoiler>* {
     z-index: -1;
     opacity: 0;
     position: relative;
+  }
+
+  .md-unhidenspoiler {
+    background: rgba(84, 84, 82, 0.1) !important;
+    cursor: default !important;
   }
    
   .md-unhidenspoiler>* {
