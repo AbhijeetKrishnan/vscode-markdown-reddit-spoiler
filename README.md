@@ -1,6 +1,7 @@
 # Reddit Spoilers for Markdown
 
-![GitHub](https://img.shields.io/github/license/AbhijeetKrishnan/vscode-markdown-reddit-spoiler)
+[![Marketplace](https://vsmarketplacebadge.apphb.com/version/AbhijeetKrishnan.markdown-reddit-spoiler.svg)](https://marketplace.visualstudio.com/items?itemName=AbhijeetKrishnan.markdown-reddit-spoiler)
+[![GitHub](https://img.shields.io/github/license/AbhijeetKrishnan/vscode-markdown-reddit-spoiler)](https://github.com/AbhijeetKrishnan/vscode-markdown-reddit-spoiler/blob/main/LICENSE)
 
 ![Demo](/docs/demo.gif)
 ## What is it?
