@@ -31,3 +31,4 @@ modified to handle stochastic environments and changing environments?
   $V$|$\pi$|samp|TD(0)
 - expected updates are >!better!< than sample updates because they are >!free from sampling error and thus less noisy!<
 - expected updates require >!more!< computation than sample updates
+- this can complicate parallel implementations because >!if an action is pruned, the rollout policy changes, and this change has to be communicated to all the other parallel rollout policies!<
