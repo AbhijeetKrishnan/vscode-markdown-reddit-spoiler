@@ -32,3 +32,11 @@ modified to handle stochastic environments and changing environments?
 - expected updates are >!better!< than sample updates because they are >!free from sampling error and thus less noisy!<
 - expected updates require >!more!< computation than sample updates
 - this can complicate parallel implementations because >!if an action is pruned, the rollout policy changes, and this change has to be communicated to all the other parallel rollout policies!<
+
+<span class="md-spoiler" title="spoiler" onclick="this.classList.add('md-unhidenspoiler')"><span>$E=mc^2$</span></span>
+
+$E=\text{ }$<span class="md-spoiler" title="spoiler" onclick="this.classList.add('md-unhidenspoiler')"><span>$mc^2$</span></span>
+
+>!$E=mc^2$!<
+
+$E=mc^2$
