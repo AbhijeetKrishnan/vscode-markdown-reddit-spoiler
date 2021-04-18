@@ -12,7 +12,7 @@ A Visual Studio Code extension that adds support for the Reddit `>!spoiler!<` sy
 ## Features
 
 - Use `>!spoiler!<` to hide spoiler text, and click on it to uncover - just like on Reddit
-- Based on [markdown-it](https://github.com/markdown-it/markdown-it) plugin [markdown-reddit-spoiler](https://github.com/iMrDJAi/markdown-it-reddit-spoiler)
+- Based on [markdown-it](https://github.com/markdown-it/markdown-it) plugin [markdown-it-reddit-spoiler](https://github.com/iMrDJAi/markdown-it-reddit-spoiler)
 
 ## Installation ...
 

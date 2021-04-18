@@ -54,7 +54,8 @@
     },
     "dependencies": {
         "markdown-it-reddit-spoiler": "^1.0.1",
+        "markdown-it-texmath": "^0.8.0",
         "vsce": "^1.87.1"
     },
-    "homepage": "https://github.com/AbhijeetKrishnan/vscode-markdown-reddit-spoiler/blob/main/README.md"
+    "homepage": "https://github.com/AbhijeetKrishnan/vscode-markdown-reddit-spoiler"
 }
