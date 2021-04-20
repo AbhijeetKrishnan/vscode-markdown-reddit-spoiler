@@ -1,6 +1,6 @@
 {
     "name": "markdown-reddit-spoiler",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "displayName": "Reddit Spoilers for Markdown Preview",
     "description": "Adds Reddit spoiler syntax support to VS Code's built-in markdown preview",
     "keywords": [
@@ -34,6 +34,9 @@
         "markdown.markdownItPlugins": true,
         "markdown.previewStyles": [
             "./css/vscode-reddit-spoiler.css"
+        ],
+        "markdown.previewScripts": [
+            "./js/vscode-reddit-spoiler.js"
         ]
     },
     "main": "./dist/extension.js",
@@ -50,12 +53,11 @@
         "ts-loader": "^8.1.0",
         "typescript": "^4.2.2",
         "webpack": "^5.32.0",
-        "webpack-cli": "^4.6.0"
+        "webpack-cli": "^4.6.0",
+        "vsce": "^1.87.1"
     },
     "dependencies": {
-        "markdown-it-reddit-spoiler": "^1.0.1",
-        "markdown-it-texmath": "^0.8.0",
-        "vsce": "^1.87.1"
+        "markdown-it-reddit-spoiler": "^1.0.1"
     },
     "homepage": "https://github.com/AbhijeetKrishnan/vscode-markdown-reddit-spoiler"
 }

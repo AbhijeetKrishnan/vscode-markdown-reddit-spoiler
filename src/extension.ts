@@ -3,11 +3,13 @@ import * as vscode from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
   return {
     extendMarkdownIt(md: any) {
+      const markdownItRedditSpoiler = require('markdown-it-reddit-spoiler');
+      markdownItRedditSpoiler.openTag = `<input type="checkbox" class="spoilerControl"/>
+      <label class="spoiler" for="spoilerControl"><span>`;
+      markdownItRedditSpoiler.closeTag = '</span></label>';
       return md
-        .use(require('markdown-it-reddit-spoiler').spoiler)
-        .use(require('markdown-it-reddit-spoiler').blockquote)
-        .use(require('markdown-it-reddit-spoiler').nestedRenderer)
-        .use(require('markdown-it-reddit-spoiler').env)
+        .use(markdownItRedditSpoiler.spoiler)
+        .use(markdownItRedditSpoiler.blockquote);
     }
   };
 }
